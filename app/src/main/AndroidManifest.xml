@@ -18,11 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
+
         <activity android:name=".Login"></activity>
-=======
+
         <activity android:name=".Registration"></activity>
->>>>>>> d9029edc8695151dc0069f958ec6d5ddc26a1ccf
+
     </application>
 
 </manifest>
