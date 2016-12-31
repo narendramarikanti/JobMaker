@@ -9,15 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.Splash_Screen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.Login_Buttons" />
+        <activity android:name=".activity.Login_Screen" />
+        <activity android:name=".activity.Signup_Screen" />
+        <activity android:name=".activity.Registration_Screen"></activity>
     </application>
 
 </manifest>

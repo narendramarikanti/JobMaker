@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context="com.nsds.jobmaker.activity.Login_Buttons">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/logo1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:textColor="@color/text_color"
+            android:background="@color/signup"
+            android:textAllCaps="false"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_color"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@color/refresh"
+            android:textAllCaps="false"
+            android:id="@+id/button2" />
+    </LinearLayout>
+</RelativeLayout>
