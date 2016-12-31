@@ -7,4 +7,6 @@
     <color name="refresh">#3955a4</color>
     <color name="signup">#aeabab</color>
     <color name="text_color">#FFFFFF</color>
+    <color name="forgot_password">#fd0000</color>
+    <color name="have_acc">#5cc7c9</color>
 </resources>

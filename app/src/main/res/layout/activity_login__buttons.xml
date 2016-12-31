@@ -31,7 +31,7 @@
             android:textColor="@color/text_color"
             android:background="@color/signup"
             android:textAllCaps="false"
-            android:id="@+id/button" />
+            android:id="@+id/signup" />
 
         <Button
             android:layout_width="0dp"
@@ -42,6 +42,6 @@
             android:text="Login"
             android:background="@color/refresh"
             android:textAllCaps="false"
-            android:id="@+id/button2" />
+            android:id="@+id/login" />
     </LinearLayout>
 </RelativeLayout>

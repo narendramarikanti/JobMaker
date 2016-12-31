@@ -5,4 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="signup_with">Signup with</string>
+
+    <string name="forgot_password"><html><h1><u>Forgot Password?</u></h1></html></string>
 </resources>
