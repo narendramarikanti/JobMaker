@@ -8,4 +8,12 @@
     <string name="signup_with">Signup with</string>
 
     <string name="forgot_password"><html><h1><u>Forgot Password?</u></h1></html></string>
+    <string name="feeds">Recent Update</string>
+    <string name="search">Industries</string>
+    <string name="activities">Maps</string>
+    <string name="messages">Messages</string>
+    <string name="cart">Cart</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
