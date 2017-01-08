@@ -22,6 +22,8 @@ public class Login_Screen extends Activity {
             public void onClick(View v) {
                 Intent i = new Intent(Login_Screen.this,MainActivity.class);
                 startActivity(i);
+                overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+
             }
         });
     }

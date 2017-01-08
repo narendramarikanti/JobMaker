@@ -2,6 +2,7 @@ package com.nsds.jobmaker.activity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -283,13 +284,32 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment = null;
         Class fragmentClass = null;
-//        if (id == R.id.friends_nav) {
-//
-//            Intent i = new Intent(HomeScreen.this, kamptive.com.kamptive.activity.Friends.class);
-//            startActivity(i);
-//            overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
-//            finish();
-//
+        if (id == R.id.settings) {
+
+            startActivity(new Intent(MainActivity.this,Settings.class));
+            overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+            finish();
+        }
+        else if (id == R.id.help)
+        {
+            startActivity(new Intent(MainActivity.this,Help.class));
+            overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+            finish();
+        }
+        else if (id == R.id.notifications)
+        {
+            startActivity(new Intent(MainActivity.this,Notifications.class));
+            overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+            finish();
+        }
+        else if (id == R.id.appliedjobs)
+        {
+            startActivity(new Intent(MainActivity.this,Applied_Jobs.class));
+            overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+            finish();
+        }
+
+
 //
 //            // fragmentClass = Friends.class;
 ////         FriendsDialog();
