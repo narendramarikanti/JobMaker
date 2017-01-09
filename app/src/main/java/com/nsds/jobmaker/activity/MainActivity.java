@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mActivity = this;
@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons(0);
-
 
 
         // call when tab selected
@@ -233,7 +232,7 @@ public class MainActivity extends AppCompatActivity
 //        });
 
 
-        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close){
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
             public void onDrawerClosed(View drawerView) {
                 // Code here will be triggered once the drawer closes as we dont want anything to happen so we leave this blank
@@ -256,7 +255,6 @@ public class MainActivity extends AppCompatActivity
             }
 
 
-
         };
         drawerLayout.setDrawerListener(toggle);
         toggle.syncState();
@@ -268,15 +266,11 @@ public class MainActivity extends AppCompatActivity
         });
 
 
-
-
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(0).setChecked(false);
 
 
-
     }
-
 
 
     @Override
@@ -284,120 +278,31 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment = null;
         Class fragmentClass = null;
-<<<<<<< HEAD
+
         if (id == R.id.settings) {
 
-            startActivity(new Intent(MainActivity.this,Settings.class));
+            startActivity(new Intent(MainActivity.this, Settings.class));
             overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
             finish();
-        }
-        else if (id == R.id.help)
-        {
-            startActivity(new Intent(MainActivity.this,Help.class));
+        } else if (id == R.id.help) {
+            startActivity(new Intent(MainActivity.this, Help.class));
             overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
             finish();
-        }
-        else if (id == R.id.notifications)
-        {
-            startActivity(new Intent(MainActivity.this,Notifications.class));
+        } else if (id == R.id.notifications) {
+            startActivity(new Intent(MainActivity.this, Notifications.class));
             overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
             finish();
-        }
-        else if (id == R.id.appliedjobs)
-        {
-            startActivity(new Intent(MainActivity.this,Applied_Jobs.class));
+        } else if (id == R.id.appliedjobs) {
+            startActivity(new Intent(MainActivity.this, Applied_Jobs.class));
             overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
             finish();
+
+        }
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
         }
 
 
-=======
-
-        if (id==R.id.logout)
-        {
-
-        }
-
-//        if (id == R.id.friends_nav) {
-//
-//            Intent i = new Intent(HomeScreen.this, kamptive.com.kamptive.activity.Friends.class);
-//            startActivity(i);
-//            overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
-//            finish();
-//
->>>>>>> origin/master
-//
-//            // fragmentClass = Friends.class;
-////         FriendsDialog();
-////            navigationView.getMenu().getItem(0).setChecked(true);
-//
-////            Intent i =new Intent(HomeScreen.this, Add_Child.class);
-////            startActivity(i);
-//        }
-//        else if (id == R.id.notification_nav) {
-////             fragmentClass = Notification.class;
-//            //  NotificationDialog();
-//            Intent i = new Intent(HomeScreen.this, kamptive.com.kamptive.activity.Notification.class);
-//            startActivity(i);
-//            overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
-//            finish();
-//            //    navigationView.getMenu().getItem(1).setChecked(true);
-//
-//
-//        } else if (id == R.id.polling_summary_nav) {
-//
-//            Intent i = new Intent(HomeScreen.this, kamptive.com.kamptive.activity.Poll_Summary.class);
-//            startActivity(i);
-//            overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
-//            finish();
-//
-////             fragmentClass = Poll_Summary.class;
-////          PollingSummaryDialog();
-////            navigationView.getMenu().getItem(2).setChecked(true);
-//        }
-//        else if (id == R.id.logout)
-//        {
-//            final android.app.Dialog mDialog = MyDialog.logout("Are you sure you want to Logout?", HomeScreen.this);
-//
-//            (mDialog.findViewById(R.id.yes)).setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Logout(Utility.getSharedPreferences(HomeScreen.this,Constants.TOKEN_ID),Utility.getSharedPreferences(HomeScreen.this,Constants.CUSTOMER_ID),Constants.AXIS_API_logout);
-//                    mDialog.dismiss();
-//                }
-//            });
-//
-//            (mDialog.findViewById(R.id.no)).setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    mDialog.dismiss();
-//                }
-//            });
-//
-//
-//
-//        }
-//        try {
-//            fragment = (Fragment) fragmentClass.newInstance();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        fragmentManager.beginTransaction()
-//                .replace(R.id.flContent, fragment)
-//                .addToBackStack(null).commit();
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
-
-//    @Override
-//    public void onFragmentInteraction(Uri uri) {
-//
-//    }
-//
-
-
-}
