@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity
     private ViewPager viewPager;
     NavigationView navigationView;
     private int[] tabIcons = {
-            R.drawable.recent_red1,
-            R.drawable.industries_red1,
-            R.drawable.maps_red1
+            R.mipmap.recent_red1,
+            R.mipmap.industries_red1,
+            R.mipmap.maps_red1
     };
     private int[] utabIcons = {
-            R.drawable.recent_black1,
-            R.drawable.industries_black1,
-            R.drawable.maps_black1
+            R.mipmap.recent_black1,
+            R.mipmap.industries_black1,
+            R.mipmap.maps_black1
     };
 
     @Override
@@ -133,17 +133,17 @@ public class MainActivity extends AppCompatActivity
 
         View tabOne = (View) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         ((TextView) tabOne.findViewById(R.id.tv_tab)).setText(getString(R.string.feeds));
-        ((ImageView) tabOne.findViewById(R.id.img_tab)).setImageDrawable(getResources().getDrawable(R.drawable.recent_black1));
+        ((ImageView) tabOne.findViewById(R.id.img_tab)).setImageDrawable(getResources().getDrawable(R.mipmap.recent_black1));
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
         View tabTwo = (View) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         ((TextView) tabTwo.findViewById(R.id.tv_tab)).setText(getString(R.string.search));
-        ((ImageView) tabTwo.findViewById(R.id.img_tab)).setImageDrawable(getResources().getDrawable(R.drawable.industries_black1));
+        ((ImageView) tabTwo.findViewById(R.id.img_tab)).setImageDrawable(getResources().getDrawable(R.mipmap.industries_black1));
         tabLayout.getTabAt(1).setCustomView(tabTwo);
 
         View tabThree = (View) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         ((TextView) tabThree.findViewById(R.id.tv_tab)).setText(getString(R.string.activities));
-        ((ImageView) tabThree.findViewById(R.id.img_tab)).setImageDrawable(getResources().getDrawable(R.drawable.maps_black1));
+        ((ImageView) tabThree.findViewById(R.id.img_tab)).setImageDrawable(getResources().getDrawable(R.mipmap.maps_black1));
         tabLayout.getTabAt(2).setCustomView(tabThree);
 
 
@@ -284,6 +284,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment = null;
         Class fragmentClass = null;
+<<<<<<< HEAD
         if (id == R.id.settings) {
 
             startActivity(new Intent(MainActivity.this,Settings.class));
@@ -310,6 +311,21 @@ public class MainActivity extends AppCompatActivity
         }
 
 
+=======
+
+        if (id==R.id.logout)
+        {
+
+        }
+
+//        if (id == R.id.friends_nav) {
+//
+//            Intent i = new Intent(HomeScreen.this, kamptive.com.kamptive.activity.Friends.class);
+//            startActivity(i);
+//            overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+//            finish();
+//
+>>>>>>> origin/master
 //
 //            // fragmentClass = Friends.class;
 ////         FriendsDialog();

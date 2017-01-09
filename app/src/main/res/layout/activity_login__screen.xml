@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
+    android:background="@mipmap/bg3"
     tools:context="com.nsds.jobmaker.activity.Login_Screen">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:background="@drawable/edit_style"
             android:paddingLeft="10dp"
             android:drawablePadding="5dp"
-            android:drawableLeft="@drawable/user_icon"
+            android:drawableLeft="@mipmap/user_icon"
             android:id="@+id/editText"
             android:ems="10"/>
 
@@ -34,7 +34,7 @@
             android:background="@drawable/edit_style"
             android:drawablePadding="5dp"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/pwd_icon"
+            android:drawableLeft="@mipmap/pwd_icon"
             android:ems="10"
             android:id="@+id/editText2"
             android:layout_marginTop="10dp" />
@@ -68,6 +68,6 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:id="@+id/imageView4"
-        android:background="@drawable/logo1"
+        android:background="@mipmap/logo1"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
