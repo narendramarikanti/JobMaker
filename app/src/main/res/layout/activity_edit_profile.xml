@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+
+android:layout_margin="15dp"
+tools:context="com.nsds.jobmaker.activity.Registration_Screen">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/edit_camera"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000" />
+
+
+        <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="20"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="10"
+        android:background="@drawable/edit_style"
+        android:inputType="textPersonName"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:hint="First Name"
+        android:ems="10"
+        android:id="@+id/editText13" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:paddingLeft="10dp"
+        android:hint="Last Name"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_style"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/editText14" />
+</LinearLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:hint="Age"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edit_style"
+    android:id="@+id/editText6"
+    />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="20"
+    android:layout_marginTop="10dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center_horizontal">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:text="Male"
+        android:id="@+id/male" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_weight="10"
+        android:id="@+id/female" />
+</LinearLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:background="@drawable/edit_style"
+    android:layout_marginTop="10dp"
+    android:hint="Mobile Number"
+    android:layout_height="45dp"
+    android:id="@+id/editText7"
+    />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:paddingLeft="10dp"
+    android:hint="Qualification"
+    android:background="@drawable/edit_style"
+    android:layout_marginTop="10dp"
+    android:id="@+id/editText8" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginTop="10dp"
+    android:hint="Project Title"
+    android:paddingLeft="10dp"
+    android:background="@drawable/edit_style"
+    android:id="@+id/editText9" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="20"
+    android:layout_marginTop="10dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center_horizontal">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fresher"
+        android:layout_weight="10"
+        android:id="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experienced"
+        android:layout_weight="10"
+        android:id="@+id/checkBox2" />
+</LinearLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="45dp"
+    android:hint="Any Certifications"
+    android:layout_marginRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/edit_style"
+    android:id="@+id/editText10" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:background="@drawable/edit_style"
+    android:layout_height="45dp"
+    android:layout_marginTop="10dp"
+    android:hint="Achievements"
+
+    android:paddingLeft="10dp"
+    android:id="@+id/editText11"
+    android:layout_gravity="center_horizontal" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:background="@drawable/edit_style"
+    android:layout_height="45dp"
+    android:hint="Address"
+    android:paddingLeft="10dp"
+    android:id="@+id/editText12"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center_horizontal" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:text="Continue"  />
+
+
+
+</LinearLayout>
+
+
+
+    </ScrollView>

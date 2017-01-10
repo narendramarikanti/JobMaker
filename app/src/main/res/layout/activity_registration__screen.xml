@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -6,7 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="110"
+
 
    android:layout_margin="15dp"
     tools:context="com.nsds.jobmaker.activity.Registration_Screen">
@@ -21,7 +25,7 @@
         <EditText
             android:layout_width="0dp"
             android:layout_weight="10"
-            android:layout_height="match_parent"
+            android:layout_height="45dp"
             android:background="@drawable/edit_style"
             android:inputType="textPersonName"
             android:layout_marginRight="10dp"
@@ -33,10 +37,9 @@
         <EditText
             android:layout_width="0dp"
             android:layout_weight="10"
-
             android:paddingLeft="10dp"
             android:hint="Last Name"
-            android:layout_height="match_parent"
+            android:layout_height="45dp"
             android:background="@drawable/edit_style"
             android:inputType="textPersonName"
 
@@ -46,8 +49,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_weight="10"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:paddingLeft="10dp"
         android:hint="Age"
         android:layout_marginTop="10dp"
@@ -58,10 +60,9 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_weight="10"
         android:weightSum="20"
         android:layout_marginTop="10dp"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:layout_gravity="center_horizontal">
 
         <CheckBox
@@ -81,19 +82,17 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_weight="10"
         android:paddingLeft="10dp"
         android:background="@drawable/edit_style"
         android:layout_marginTop="10dp"
         android:hint="Mobile Number"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:id="@+id/editText7"
           />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_weight="10"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:paddingLeft="10dp"
         android:hint="Qualification"
         android:background="@drawable/edit_style"
@@ -102,8 +101,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_weight="10"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:hint="Project Title"
         android:paddingLeft="10dp"
@@ -113,10 +111,9 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_weight="10"
         android:weightSum="20"
          android:layout_marginTop="10dp"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:layout_gravity="center_horizontal">
 
         <CheckBox
@@ -136,9 +133,8 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_weight="10"
         android:layout_marginTop="10dp"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:hint="Any Certifications"
         android:layout_marginRight="10dp"
         android:paddingLeft="10dp"
@@ -147,9 +143,8 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_weight="10"
         android:background="@drawable/edit_style"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:hint="Achievements"
 
@@ -160,8 +155,7 @@
     <EditText
         android:layout_width="match_parent"
         android:background="@drawable/edit_style"
-        android:layout_weight="10"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:hint="Address"
        android:paddingLeft="10dp"
         android:id="@+id/editText12"
@@ -170,8 +164,7 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_weight="10"
-        android:layout_height="0dp"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -180,6 +173,8 @@
 
 
  </LinearLayout>
+
+    </ScrollView>
 
 
 
