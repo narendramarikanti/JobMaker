@@ -2,17 +2,15 @@
 <ScrollView
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
+    android:background="@mipmap/bg3"
     xmlns:android="http://schemas.android.com/apk/res/android" >
-
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
-
-   android:layout_margin="15dp"
+    android:layout_margin="15dp"
     tools:context="com.nsds.jobmaker.activity.Registration_Screen">
 
     <LinearLayout
@@ -42,7 +40,6 @@
             android:layout_height="45dp"
             android:background="@drawable/edit_style"
             android:inputType="textPersonName"
-
             android:ems="10"
             android:id="@+id/editText14" />
     </LinearLayout>
@@ -54,8 +51,7 @@
         android:hint="Age"
         android:layout_marginTop="10dp"
         android:background="@drawable/edit_style"
-        android:id="@+id/editText6"
-         />
+        android:id="@+id/editText6"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -87,8 +83,7 @@
         android:layout_marginTop="10dp"
         android:hint="Mobile Number"
         android:layout_height="45dp"
-        android:id="@+id/editText7"
-          />
+        android:id="@+id/editText7"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -147,7 +142,6 @@
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:hint="Achievements"
-
         android:paddingLeft="10dp"
         android:id="@+id/editText11"
         android:layout_gravity="center_horizontal" />
@@ -157,19 +151,21 @@
         android:background="@drawable/edit_style"
         android:layout_height="45dp"
         android:hint="Address"
-       android:paddingLeft="10dp"
+        android:paddingLeft="10dp"
         android:id="@+id/editText12"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:text="Continue"  />
-
+        android:layout_marginBottom="20dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:background="@color/refresh"/>
 
 
  </LinearLayout>
