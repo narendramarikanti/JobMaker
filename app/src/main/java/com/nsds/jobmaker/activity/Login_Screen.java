@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -32,5 +33,14 @@ public class Login_Screen extends Activity {
     {
         login_btn = (Button)findViewById(R.id.login_btn);
     }
-
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            startActivity( new Intent(Login_Screen.this,Login_Buttons.class));
+            overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+            finish();
+            return true;
+        }
+        return true;
+    }
 }

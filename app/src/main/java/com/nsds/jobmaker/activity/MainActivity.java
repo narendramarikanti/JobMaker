@@ -296,7 +296,15 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, Applied_Jobs.class));
             overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
             finish();
+        }else if (id == R.id.appliedjobs) {
+            startActivity(new Intent(MainActivity.this, Applied_Jobs.class));
+            overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+            finish();
 
+        }else if (id == R.id.editprofile) {
+            startActivity(new Intent(MainActivity.this, EditProfile.class));
+            overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+            finish();
         }
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);

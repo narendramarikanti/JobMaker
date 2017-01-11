@@ -44,7 +44,7 @@
         android:id="@+id/imageView6"
         android:layout_gravity="center_horizontal" />
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -55,29 +55,29 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
+            android:layout_height="45dp"
             android:background="@drawable/edit_style"
             android:drawableLeft="@mipmap/user_icon"
             android:hint="User Name"
             android:drawablePadding="5dp"
             android:paddingLeft="10dp"
+            android:layout_above="@+id/editText4"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/editText3" />
+            android:id="@+id/editText3"
+            android:layout_marginTop="15dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_height="0dp"
+            android:layout_height="45dp"
             android:background="@drawable/edit_style"
             android:drawableLeft="@mipmap/pwd_icon"
             android:hint="Password"
-            android:layout_weight="10"
+            android:layout_above="@+id/editText5"
             android:inputType="textPassword"
             android:ems="10"
             android:drawablePadding="5dp"
-
             android:paddingLeft="10dp"
             android:id="@+id/editText4"
             android:layout_gravity="center_horizontal" />
@@ -85,10 +85,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="10"
+            android:layout_height="40dp"
+            android:layout_above="@+id/signup"
             android:drawablePadding="5dp"
-
             android:background="@drawable/edit_style"
             android:drawableLeft="@mipmap/pwd_icon"
             android:hint="Confirm Password"
@@ -101,15 +100,15 @@
         <Button
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="10"
+            android:layout_height="40dp"
             android:background="@color/refresh"
             android:text="Signup"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:textColor="@color/text_color"
-            android:id="@+id/signup" />
-    </LinearLayout>
+            android:id="@+id/signup"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
 
 </LinearLayout>
     <RelativeLayout

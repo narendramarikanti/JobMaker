@@ -22,6 +22,7 @@ public class Login_Buttons extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(Login_Buttons.this, Login_Screen.class));
                 overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+                finish();
 
             }
         });
@@ -30,7 +31,7 @@ public class Login_Buttons extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(Login_Buttons.this, Signup_Screen.class));
                 overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
-
+                finish();
             }
         });
     }
